@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #1488CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input {
+    background-color: #004b77;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none ;
+
+}
+
+.card {
+    display: flex;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: #004b77;
+    max-width: 800px;
+    box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid #1488CC;
+    width: 150px;
+    height: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+    max-width: 300px;
+}
+
+ strong {
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+.repo {
+    background-color: #1488CC;
+    display: inline-block;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 0.7rem;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width: 870px) {
+    .card {
+        max-width: 600px;
+    }
+
+
+}
+@media screen and (max-width: 680px) {
+    main {
+        font-size: 0.7rem;;
+    }
+    .card {
+        width: 400px;
+        padding: 1rem;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #1488CC;
+    }
+    strong {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+    }
+    input {
+        padding: 0.5rem;
+    }
+
+
+}
+@media screen and (max-width: 500px) {
+    main {
+        font-size: 0.6rem;
+        ;
+    }
+
+    .card {
+        width: 300px;
+        padding: 0.8rem;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #1488CC;
+    }
+
+    strong {
+        font-size: 0.6rem;
+        margin-left: 0.5rem;
+    }
+
+    input {
+        padding: 0.4rem;
+    }
+    .user-info ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        max-width: 300px;
+    }
+
+
+}
